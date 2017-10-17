@@ -2505,7 +2505,7 @@ public class IgniteH2Indexing implements GridQueryIndexing {
             for (QueryTable tblKey : twoStepQry.tables()) {
                 GridH2Table tbl = dataTable(tblKey);
 
-                int cacheId = CU.cacheId(tbl.cacheName());
+                int cacheId = tbl.cacheId();
 
                 caches0.add(cacheId);
             }

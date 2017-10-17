@@ -220,6 +220,13 @@ public class GridH2Table extends TableBase {
     }
 
     /**
+     * @return Cache ID.
+     */
+    public int cacheId() {
+        return cctx.cacheId();
+    }
+
+    /**
      * @return Cache context.
      */
     public GridCacheContext cache() {
